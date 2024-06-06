@@ -42,7 +42,44 @@ https://templatemo.com/tm-591-villa-agency
     </div>
   </div> --}}
   <!-- ***** Preloader End ***** -->
+  
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+        </div>
+{{-- logout --}}
+    @auth
+        <div class="col-lg-4 col-md-4">
+          <ul class="social-links">
+            <div class="">
+              <a class="nav-link" href="{{ route('logout') }}"
+                 onclick="event.preventDefault();
+                               document.getElementById('logout-form').submit();">
+                  {{ __('Logout') }}
+              </a>
 
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                  @csrf
+              </form>
+          </div>
+      </li>
+    @endauth
+
+    @guest
+        <li class="nav-item" >
+          <a href="/login" class="nav-link">
+          <p>
+            Login
+          </p>
+        </li>
+      </a>
+    @endguest
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- ***** Header Area Start ***** -->
