@@ -13,7 +13,7 @@ SanberCode X Universitas Lancang Kuning
 Website review_film
 
 ## ERD
-![gambar erd.png]()
+![gambar erd.png](https://github.com/mriilah/Review-Film/blob/master/gambar%20erd.png)
 
 ## Link
 -- Not Available
