@@ -39,6 +39,7 @@
                 </div>
             @endif
 
+            @auth
             {{-- Form --}}
             @csrf
             @method ('put')
@@ -106,5 +107,5 @@
       </div>
     </div>
   </div>
-
+@endauth
 @endsection
