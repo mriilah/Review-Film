@@ -1,20 +1,23 @@
 @extends('layout.master')
 
 @section('content')
-<a href="/tambahcast" class="btn btn-sm btn-primary">tambah Cast</a>
+
+  <div class="contact-page section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <a href="/tambahcast" class="btn btn-sm btn-primary">tambah Cast</a>
 <table class="table">
     <thead>
       <tr>
-        <th scope="col">#</th>
         <th scope="col">Nama</th>
         <th scope="col">Umur</th>
         <th scope="col">Bio</th>
       </tr>
     </thead>
     <tbody>
-        @forelse ($cast as $key=>$item)
+        @forelse ($cast as $item)
         <tr>
-        <th scope="row">{{$key + 1}}</th>
         <td>{{$item->nama}}</td>
         <td>{{$item->umur}}</td>
         <td>{{$item->bio}}</td>
@@ -34,4 +37,8 @@
         @endforelse
     </tbody>
   </table>
+        </div>
+      </div>
+    </div>
+  </div>
 @endsection

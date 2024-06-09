@@ -53,6 +53,7 @@ Route::resource('genre', GenreController::class);
 Route::resource('film', FilmController::class);
 Route::resource('tambah', TambahController::class);
 Route::resource('cast', CastController::class);
+Route::resource('homefilm', CastController::class);
 
 Auth::routes();
 

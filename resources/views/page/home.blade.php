@@ -21,7 +21,7 @@
               <div class="dot2"></div>
           </div>
       </div>
-  </div>
+    </div>
           </div>
          </div>
         </div>

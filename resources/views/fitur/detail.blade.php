@@ -10,30 +10,17 @@
   </div>
 </div> --}}
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
         integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
-        crossorigin="anonymous"></script>
-
-        
-
-{{-- <div class="single-property section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="main-content">
-            <span class="category">{{ $film->nama }}</span>
-            <h4></h4>
-            <p>{{ $film->ringkasan }}</p>
-          </div>  --}}
-          
-
+        crossorigin="anonymous">
+    </script>
           @forelse ($film->listGenre as $item)
-          <div class="container d-flex" cards-wrapper=>
+          <div class="container d-flex contact-page section" cards-wrapper=>
             <div class="row">
               <div class ="cpl-md-4">
-            <div class="card shadow" style="width: 18rem;" >
+              <div class="card shadow" style="width: 18rem;" >
               <div class="card-body">
                 <img src="https://cdn.pixabay.com/photo/2022/06/21/06/13/the-wasp-7275216_1280.jpg" alt=""></a>
 
@@ -54,7 +41,7 @@
             </div>
             </div>
             @empty
-          Tidak Ada
+              Tidak Ada
             @endforelse
           </div>
         </div>

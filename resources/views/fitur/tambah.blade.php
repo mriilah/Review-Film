@@ -90,13 +90,9 @@
                               
                       </fieldset>
                   </div>
-
-                    
-                    
-                    <fieldset>
+                  <fieldset>
                     <button type="submit" id="form-submit" class="orange-button" onclick="myFunction()">Send Message</button>
-                    </fieldset>
-                    
+                  </fieldset>
             </div>
           </form>
         </div>
