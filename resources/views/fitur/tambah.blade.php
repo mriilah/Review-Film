@@ -5,8 +5,8 @@
 <div class="contact-page section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
-          <div class="section-heading">
+        {{-- <div class="col-lg-12"> --}}
+          {{-- <div class="section-heading">
             <h6>| Contact Us</h6>
             <h2>Get In Touch With Our Agents</h2>
           </div>
@@ -25,8 +25,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-6">
+        </div> --}}
+        <div class="col-lg-12">
           <form id="contact-form" action="/film" method="post">
             {{-- Validasi --}}
             @if ($errors->any())
