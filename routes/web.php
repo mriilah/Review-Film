@@ -32,9 +32,6 @@ Route::get('/tambah', function () {
     return view('fitur/tambah');
 });
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 
