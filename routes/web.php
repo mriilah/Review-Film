@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\FilmController;
 use App\Http\Controllers\GenreController;
 use App\Http\Controllers\TambahController;
+use App\Http\Controllers\CastController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,9 @@ Route::get('/tambah', function () {
     return view('fitur/tambah');
 });
 
+Route::get('/tambahcast', function () {
+    return view('cast.add');
+});
 
 Auth::routes();
 
@@ -40,3 +44,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('genre', GenreController::class);
 Route::resource('film', FilmController::class);
 Route::resource('tambah', TambahController::class);
+Route::resource('cast', CastController::class);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

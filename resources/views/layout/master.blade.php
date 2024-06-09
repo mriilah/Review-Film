@@ -98,6 +98,7 @@ https://templatemo.com/tm-591-villa-agency
                     <ul class="nav">
                       <li><a href="/">Home</a></li>
                       <li><a href="/genre">Genre</a></li>
+                      <li><a href="/cast">cest</a></li>
                       <li><a href="/tambah">Tambah Film</a></li>
                     </ul>   
                     <a class='menu-trigger'>
