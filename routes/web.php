@@ -32,6 +32,8 @@ Route::get('/tambah', function () {
     return view('fitur/tambah');
 });
 
+Route::middleware(['Auth'])->group(function () {
+});
 
 Auth::routes();
 

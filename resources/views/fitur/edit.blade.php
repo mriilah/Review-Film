@@ -40,6 +40,7 @@
             @endif
 
             {{-- Form --}}
+            @auth
             @csrf
             @method ('put')
             <div class="row">
@@ -99,7 +100,7 @@
                     <fieldset>
                     <button type="submit" id="form-submit" class="orange-button">Send Message</button>
                     </fieldset>
-                    
+                    @endauth
             </div>
           </form>
         </div>
