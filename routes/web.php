@@ -53,8 +53,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('genre', GenreController::class);
 Route::resource('film', FilmController::class);
 Route::resource('tambah', TambahController::class);
-
 Route::resource('cast', CastController::class);
+
 
 Auth::routes();
 
