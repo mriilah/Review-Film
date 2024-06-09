@@ -33,9 +33,15 @@ Route::get('/tambah', function () {
     return view('fitur/tambah');
 });
 
+
 Route::get('/tambahcast', function () {
     return view('cast.add');
 });
+
+Route::middleware(['Auth'])->group(function () {
+});
+
+
 
 Auth::routes();
 

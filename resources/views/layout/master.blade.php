@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Villa Agency - Property Listing by TemplateMo</title>
+    <title>Review Film</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('/template/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -70,9 +70,7 @@ https://templatemo.com/tm-591-villa-agency
     @guest
         <li class="nav-item" >
           <a href="/login" class="nav-link">
-          <p>
-            Login
-          </p>
+
         </li>
       </a>
     @endguest
@@ -98,8 +96,13 @@ https://templatemo.com/tm-591-villa-agency
                     <ul class="nav">
                       <li><a href="/">Home</a></li>
                       <li><a href="/genre">Genre</a></li>
+
                       <li><a href="/cast">cest</a></li>
+
+                      @auth
+
                       <li><a href="/tambah">Tambah Film</a></li>
+                      @endauth
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
