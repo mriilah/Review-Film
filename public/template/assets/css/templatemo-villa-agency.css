@@ -1126,7 +1126,6 @@ Best Deal Style
   font-size: 20px;
   color: #1e1e1e;
   font-weight: 700;
-  float: right;
   display: inline-block;
 }
 
@@ -1206,7 +1205,6 @@ Properties Style
   color: #f35525;
   margin-top: 6px;
   display: inline-block;
-  float: right;
   margin-top: 30px;
 }
 
@@ -1652,7 +1650,7 @@ Contact Page Style
   margin-bottom: 15px;
 }
 
-.contact-page #contact-form input {
+.contact-page #contact-form .input {
   width: 100%;
   height: 44px;
   border-radius: 22px;
@@ -1825,4 +1823,6 @@ body {
   .contact-page .section-heading {
     margin-right: 100px;
   }
+  
 }
+

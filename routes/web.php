@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\FilmController;
+use App\Http\Controllers\GenreController;
+use App\Http\Controllers\TambahController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,19 +21,25 @@ Route::get('/', function () {
     return view('page.home');
 });
 
-Route::get('/film', function () {
+Route::get('/genre', function () {
     return view('page.film');
 });
 
 Route::get('/contact', function () {
     return view('page.contact');
 });
+Route::get('/tambah', function () {
+    return view('fitur/tambah');
+});
 
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('genre', GenreController::class);
+Route::resource('film', FilmController::class);
+Route::resource('tambah', TambahController::class);

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="{{ asset('/template/assets/css/owl.css') }}">
     <link rel="stylesheet" href="{{ asset('/template/assets/css/animate.css') }}">
     <link rel="stylesheet"href="{{ asset('https://unpkg.com/swiper@7/swiper-bundle.min.css') }}"/>
+
     @stack('styles')
 <!--a
 
@@ -89,15 +90,15 @@ https://templatemo.com/tm-591-villa-agency
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
+                    <a href="/" class="logo">
                         <h1>ReviewFilm</h1>
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                       <li><a href="/">Home</a></li>
-                      <li><a href="/film">Film</a></li>
-                      <li><a href="/contact">Contact Us</a></li>
+                      <li><a href="/genre">Genre</a></li>
+                      <li><a href="/tambah">Tambah Film</a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
