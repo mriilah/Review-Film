@@ -100,7 +100,7 @@ https://templatemo.com/tm-591-villa-agency
                       <li><a href="/">Home</a></li>
                       <li><a href="/genre">Genre</a></li>
 
-                      <li><a href="/cast">cest</a></li>
+                      
 
                       @auth
 
