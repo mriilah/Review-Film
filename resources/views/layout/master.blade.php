@@ -64,16 +64,9 @@ https://templatemo.com/tm-591-villa-agency
                   @csrf
               </form>
           </div>
-      </li>
-    @endauth
-
-    @guest
-        <li class="nav-item" >
-          <a href="/login" class="nav-link">
-
-        </li>
-      </a>
-    @endguest
+          </li>
+          @endauth
+          
           </ul>
         </div>
       </div>
@@ -94,6 +87,16 @@ https://templatemo.com/tm-591-villa-agency
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
+                       {{-- @guest
+                          <li class="nav-item" >
+                            <a href="/login" class="nav-link">
+                      
+                          </li>
+                        </a>
+                  @endguest --}}
+                      @guest
+                      <li><a href="/login">login</a></li>
+                      @endguest
                       <li><a href="/">Home</a></li>
                       <li><a href="/genre">Genre</a></li>
                       @auth

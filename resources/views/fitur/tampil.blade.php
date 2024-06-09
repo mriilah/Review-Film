@@ -5,11 +5,11 @@
 <div class="single-property section">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8">
+      <div class="col-lg-12">
         
         
         <div class="main-image">
-          <img src="assets/images/single-property.jpg" alt="">
+          <img src="{{ '/template/assets/images/home.jpg' }}" alt="">
         </div>
         <div class="main-content">
           <h4>{{ $film->judul }}</h4>
@@ -19,7 +19,7 @@
         </div> 
 
         
-      </div>
+      {{-- </div>
       <div class="col-lg-4">
         <div class="info-table">
           <ul>
@@ -44,6 +44,52 @@
       </div>
     </div>
   </div>
+</div> --}}
+<hr>
+
+<div class="col-lg-12">
+  <form id="contact-form" action="/kritik/{{ $film->id }}" method="post">
+    {{-- Validasi --}}
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
+    {{-- Form --}}
+    @csrf
+    <div class="row">
+
+            </div>
+            <div class="col-lg-12">
+                <fieldset>
+                    <label for="message">Kritik</label>
+                    <textarea name="content" id="message" placeholder="Masukkan Kritik" required></textarea>
+                </fieldset>
+            </div>
+
+            <div class="col-lg-12">
+              <fieldset>
+                  <label for="message">point</label>
+                  <textarea name="content" id="message" placeholder="Point" required></textarea>
+              </fieldset>
+          </div>
+
+            
+            
+            <fieldset>
+            <button type="submit" id="form-submit" class="orange-button" onclick="myFunction()">Send Message</button>
+            </fieldset>
+            
+    </div>
+  </form>
+</div>
+</div>
+</div>
 </div>
 
 @endsection

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\FilmController;
 use App\Http\Controllers\GenreController;
+use App\Http\Controllers\KritikController;
 use App\Http\Controllers\TambahController;
 
 /*
@@ -33,6 +34,8 @@ Route::get('/tambah', function () {
 });
 
 Route::middleware(['Auth'])->group(function () {
+    
+    
 });
 
 
@@ -43,3 +46,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('genre', GenreController::class);
 Route::resource('film', FilmController::class);
 Route::resource('tambah', TambahController::class);
+
+Route::post('/kritik/{id}', [KritikController::class,'store']);  
